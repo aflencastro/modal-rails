@@ -1,0 +1,13 @@
+<h1>Editing item</h1>
+
+
+<%= render "remote_modal", title: "Editing item" do %>
+  <%= render "form", item: @item %>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Show this item", @item %> |
+  <%= link_to "Back to items", items_path %>
+</div>
